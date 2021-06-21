@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Characters" representedClassName="Characters" syncable="YES" codeGenerationType="class">
+        <attribute name="addInfoPhyco" optional="YES" attributeType="String"/>
+        <attribute name="addInfoPhysical" optional="YES" attributeType="String"/>
+        <attribute name="addInfoSos" optional="YES" attributeType="String"/>
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="appearances" optional="YES" attributeType="String"/>
+        <attribute name="belief" optional="YES" attributeType="String"/>
+        <attribute name="community" optional="YES" attributeType="String"/>
+        <attribute name="economiClass" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="goals" optional="YES" attributeType="String"/>
+        <attribute name="hobby" optional="YES" attributeType="String"/>
+        <attribute name="important" optional="YES" attributeType="String"/>
+        <attribute name="intelligence" optional="YES" attributeType="String"/>
+        <attribute name="intelligenceDesc" optional="YES" attributeType="String"/>
+        <attribute name="like" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="needs" optional="YES" attributeType="String"/>
+        <attribute name="obstacles" optional="YES" attributeType="String"/>
+        <attribute name="personality" optional="YES" attributeType="String"/>
+        <attribute name="personalityDesc" optional="YES" attributeType="String"/>
+        <attribute name="perspective" optional="YES" attributeType="String"/>
+        <attribute name="perspectiveDesc" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="physicalDesc" optional="YES" attributeType="String"/>
+        <attribute name="posture" optional="YES" attributeType="String"/>
+        <attribute name="routines" optional="YES" attributeType="String"/>
+        <attribute name="significantMoment" optional="YES" attributeType="String"/>
+        <attribute name="significantPerson" optional="YES" attributeType="String"/>
+        <attribute name="skin" optional="YES" attributeType="String"/>
+        <attribute name="strengh" optional="YES" attributeType="String"/>
+        <attribute name="tempDesc" optional="YES" attributeType="String"/>
+        <attribute name="temprament" optional="YES" attributeType="String"/>
+        <attribute name="wants" optional="YES" attributeType="String"/>
+        <attribute name="weakness" optional="YES" attributeType="String"/>
+        <relationship name="parentStory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stories" inverseName="chars" inverseEntity="Stories"/>
+    </entity>
+    <entity name="Stories" representedClassName="Stories" syncable="YES" codeGenerationType="class">
+        <attribute name="premis" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="chars" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Characters" inverseName="parentStory" inverseEntity="Characters"/>
+    </entity>
+    <elements>
+        <element name="Characters" positionX="-54" positionY="9" width="128" height="554"/>
+        <element name="Stories" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
+</model>
