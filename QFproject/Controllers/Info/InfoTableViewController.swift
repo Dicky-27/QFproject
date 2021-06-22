@@ -38,12 +38,12 @@ class InfoTableViewController: UITableViewController {
         if indexPath.row == 0 {
             cell.imageItem.image = #imageLiteral(resourceName: "pig")
             cell.judulItem.text = "Piggy Bank"
-            cell.descItem.text = "Your character current Socioeconomic Status"
+            cell.descItem.text = "Your character's current Socioeconomic Status"
         } else if indexPath.row == 1{
             
             cell.imageItem.image = #imageLiteral(resourceName: "phoneNo")
             cell.judulItem.text = "Phone"
-            cell.descItem.text = "Your character personalitys"
+            cell.descItem.text = "Your character's personality"
             
         }else if indexPath.row == 2{
             cell.imageItem.image = #imageLiteral(resourceName: "laptop")
@@ -63,22 +63,22 @@ class InfoTableViewController: UITableViewController {
         }else if indexPath.row == 5{
             cell.imageItem.image = #imageLiteral(resourceName: "Action Figure Outline")
             cell.judulItem.text = "Action Figure"
-            cell.descItem.text = "Your character hobby(ies)"
+            cell.descItem.text = "Your character's hobby"
             
         }else if indexPath.row == 6{
             cell.imageItem.image = #imageLiteral(resourceName: "rubik")
             cell.judulItem.text = "Rubik's Cube"
-            cell.descItem.text = "How your character solve his/her problem"
+            cell.descItem.text = "How your character's solve his/her problem"
             
         }else if indexPath.row == 7{
             cell.imageItem.image = #imageLiteral(resourceName: "book")
             cell.judulItem.text = "Recipe Book"
-            cell.descItem.text = "Your character intellegence"
+            cell.descItem.text = "Your character's intellegence"
             
         }else if indexPath.row == 8{
             cell.imageItem.image = #imageLiteral(resourceName: "glass")
             cell.judulItem.text = "Glass of water"
-            cell.descItem.text = "Your character perspective on life"
+            cell.descItem.text = "Your character's perspective on life"
             
         }else{
             cell.imageItem.image = #imageLiteral(resourceName: "polaroid")

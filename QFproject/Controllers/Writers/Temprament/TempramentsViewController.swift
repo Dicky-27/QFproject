@@ -22,6 +22,8 @@ class TempramentsViewController: UIViewController, UICollectionViewDataSource, U
   //  var index = 0
     
     var tempt = ""
+    var steg = ""
+    var wek = ""
     
     var check: Bool = true
     
@@ -106,20 +108,24 @@ class TempramentsViewController: UIViewController, UICollectionViewDataSource, U
         
         if indexPath.row == 0 {
             tempt = "Melancholic"
-            
+            steg = "Thoughtful, analytical, empathetic to others, good listener, prone to creativity"
+            wek = "Unrealistic expectations, concerned with perfection, moody, critical of self & others, slow to make decisions"
             
         }else if indexPath.row == 1 {
             tempt = "Choleric"
-            
+            steg = "Good at making decisions, Analytical, Logical, Determined, Direct"
+            wek = "Unrealistic expectations, concerned with perfection, moody, critical of self & others, slow to make decisions"
             
         }else if indexPath.row == 2 {
             tempt = "Sanguine"
+            steg = "Storyteller, Optimistic, Makes friend easily, Entertaining, Cheerful & Enthusiastic"
+            wek = "Compulsive talker, Impulsive, Undisciplined, Disorganized, Has trouble listening, Forgetful"
          
             
         }else {
             tempt = "Phlegmatic"
-           
-            
+            steg = "Calm & Collected, Good Under, Pressure, Accomodating, Dependable, Practical & Efficient"
+            wek = "Unenthusiastic, Indecisive, Can be too compromising, Procrastinates, Can be, Uninvolved"
         }
         
     }
@@ -139,23 +145,53 @@ class TempramentsViewController: UIViewController, UICollectionViewDataSource, U
             return
         }
         
-        let alert = UIAlertController(title: "Character Saved", message: "Your changes have been saved", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Okay", style: .default) { (action) in
-        
+        if CharLandingViewController.newItem == false {
+            let alert = UIAlertController(title: "Character Saved", message: "Your changes have been saved", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Okay", style: .default) { (action) in
             
-            // untuk important value
+                
+                // untuk important value
+                
+                CharLandingViewController.selectedChars?.setValue(self.tempt, forKey: "temprament")
+                CharLandingViewController.selectedChars?.setValue(self.steg, forKey: "strengh")
+                CharLandingViewController.selectedChars?.setValue(self.wek, forKey: "weakness")
+                
+                
             
-            CharLandingViewController.selectedChars?.setValue(self.tempt, forKey: "temprament")
-        
-            self.saveItems()
-            self.dismiss(animated: true, completion: {
-                vc.alernya()
-            })
-        
+                self.saveItems()
+                self.dismiss(animated: true, completion: {
+                    vc.alernya()
+                })
+            
+            }
+            
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            
+        }else {
+            let alert = UIAlertController(title: "Character Saved", message: "Your changes have been saved", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Okay", style: .default) { (action) in
+            
+                
+                // untuk important value
+                
+                CharLandingViewController.itemArray.last?.setValue(self.tempt, forKey: "temprament")
+                CharLandingViewController.itemArray.last?.setValue(self.steg, forKey: "strengh")
+                CharLandingViewController.itemArray.last?.setValue(self.wek, forKey: "weakness")
+                
+                
+            
+                self.saveItems()
+                self.dismiss(animated: true, completion: {
+                    vc.alernya()
+                })
+            
+            }
+            
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
         }
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+       
         
         
         

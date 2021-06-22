@@ -70,7 +70,7 @@ class ProgressBar: UIView {
        
         
         
-        imageView.frame = CGRect(x: (rect.width * progress) - 125, y: 30, width: 250, height: 50)
+        imageView.frame = CGRect(x: (rect.width * progress) - 100, y: 30, width: 200, height: 40)
         
         aPath4.addRoundedRect(in: CGRect(x: 0, y: 20, width: rect.width, height: 40), cornerWidth: 10, cornerHeight: 10)
         

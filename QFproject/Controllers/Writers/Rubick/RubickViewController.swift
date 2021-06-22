@@ -72,9 +72,9 @@ class RubickViewController: UIViewController {
             question.text = allQuestions.list2[questionNumber].question
             a.setTitle(allQuestions.list2[questionNumber].optionA, for: UIControl.State.normal)
             b.setTitle(allQuestions.list2[questionNumber].optionB, for: UIControl.State.normal)
-            c.setTitle(allQuestions.list2[questionNumber].optionB, for: UIControl.State.normal)
-            d.setTitle(allQuestions.list2[questionNumber].optionB, for: UIControl.State.normal)
-            e.setTitle(allQuestions.list2[questionNumber].optionB, for: UIControl.State.normal)
+            c.setTitle(allQuestions.list2[questionNumber].optionC, for: UIControl.State.normal)
+            d.setTitle(allQuestions.list2[questionNumber].optionD, for: UIControl.State.normal)
+            e.setTitle(allQuestions.list2[questionNumber].optionE, for: UIControl.State.normal)
             
 
             updateUI()

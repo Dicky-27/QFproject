@@ -13,7 +13,7 @@
         <!--Char View Controller-->
         <scene sceneID="pwK-0n-oZF">
             <objects>
-                <viewController storyboardIdentifier="CharViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IBv-zv-D4T" customClass="CharViewController" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IBv-zv-D4T" customClass="CharViewController" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8I7-dJ-Cah">
                         <rect key="frame" x="0.0" y="0.0" width="873.5" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bxj-Pd-nhD" customClass="CharacterCollectionViewCell" customModule="QFproject" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bxj-Pd-nhD" customClass="CharacterCollectionViewCell" customModule="Carsa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="192" height="229"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AnG-ve-Q58">
@@ -178,14 +178,14 @@
         <!--Stories-->
         <scene sceneID="rGL-Rd-MRS">
             <objects>
-                <tableViewController storyboardIdentifier="StoryTableViewController" title="Stories" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g1N-bB-HTT" customClass="StoryTableViewController" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StoryTableViewController" title="Stories" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g1N-bB-HTT" customClass="StoryTableViewController" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d2a-wl-OlN">
                         <rect key="frame" x="0.0" y="0.0" width="420" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" name="BgColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="OA7-vO-EBU" customClass="StoryTableViewCell" customModule="QFproject" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="OA7-vO-EBU" customClass="StoryTableViewCell" customModule="Carsa" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="420" height="41"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OA7-vO-EBU" id="kby-fN-7a1">
@@ -238,7 +238,7 @@
         <!--New Story-->
         <scene sceneID="vmc-y3-eLf">
             <objects>
-                <viewController storyboardIdentifier="NewStoryViewController" title="New Story" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KCF-1W-GdX" customClass="NewStoryViewController" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewStoryViewController" title="New Story" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KCF-1W-GdX" customClass="NewStoryViewController" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E2s-Yr-C3r">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="794"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,12 +376,12 @@
         <!--Char Landing View Controller-->
         <scene sceneID="TTa-i0-Uv0">
             <objects>
-                <viewController storyboardIdentifier="CharLandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Hp-Tc-ZHl" customClass="CharLandingViewController" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharLandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Hp-Tc-ZHl" customClass="CharLandingViewController" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xtD-2a-1M0">
                         <rect key="frame" x="0.0" y="0.0" width="873.5" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpK-lB-DCa" customClass="ButtonWithImage" customModule="QFproject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpK-lB-DCa" customClass="ButtonWithImage" customModule="Carsa" customModuleProvider="target">
                                 <rect key="frame" x="30" y="196.5" width="813.5" height="41"/>
                                 <color key="backgroundColor" name="Dropdown"/>
                                 <constraints>
@@ -437,7 +437,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMH-Je-yoc">
                                 <rect key="frame" x="423.5" y="80" width="400" height="82"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-CC-MN7" customClass="ProgressBar" customModule="QFproject" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-CC-MN7" customClass="ProgressBar" customModule="Carsa" customModuleProvider="target">
                                         <rect key="frame" x="25" y="31" width="350" height="20"/>
                                         <color key="backgroundColor" name="warna"/>
                                         <constraints>
@@ -570,7 +570,7 @@
         <!--Core View Controller-->
         <scene sceneID="9Jc-m6-RwC">
             <objects>
-                <viewController storyboardIdentifier="CoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WPO-X4-Lhi" customClass="CoreViewController" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WPO-X4-Lhi" customClass="CoreViewController" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFP-sk-NZ5">
                         <rect key="frame" x="0.0" y="0.0" width="873.5" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -744,7 +744,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coreCell" id="J4x-0h-LSy" customClass="CoreCollectionViewCell" customModule="QFproject" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coreCell" id="J4x-0h-LSy" customClass="CoreCollectionViewCell" customModule="Carsa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="8.5" width="700" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ABw-3G-aAb">
@@ -996,7 +996,7 @@ An antagonist can either have opposite goals from your character or wants the sa
         <!--Split View Contoller-->
         <scene sceneID="4QV-De-Xze">
             <objects>
-                <splitViewController allowDoubleColumnStyle="YES" id="2Iv-hL-R9v" customClass="SplitViewContoller" customModule="QFproject" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController allowDoubleColumnStyle="YES" id="2Iv-hL-R9v" customClass="SplitViewContoller" customModule="Carsa" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="bAs-ue-0gY" kind="relationship" relationship="masterViewController" id="ifl-eq-F3h"/>
                         <segue destination="0ri-LZ-SGm" kind="relationship" relationship="detailViewController" id="Nzl-5h-HLi"/>

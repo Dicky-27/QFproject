@@ -91,7 +91,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         if CharLandingViewController.newItem == true {
             
             charNameProfile.text = name
-            if CharLandingViewController.selectedChars?.photo != nil {
+            if CharLandingViewController.itemArray.last?.photo != nil {
                 imgProfile.image = UIImage(data: (CharLandingViewController.itemArray.last?.photo)!)
             } else {
                 imgProfile.image = UIImage(named: "orang")
@@ -305,7 +305,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     cellTiga.kontenLbl3.text = CharLandingViewController.selectedChars?.skin ?? "Skin"
                     
-                    cellTiga.kontenTf.placeholder = "Tulis disini"
+                    cellTiga.kontenTf.placeholder = "Write more info here"
                     cellTiga.kontenTf.text = CharLandingViewController.selectedChars?.physicalDesc ?? ""
                     cellTiga.kontenTf.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
                     
@@ -313,18 +313,18 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 } else if indexPath.section == 1 {
                     
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.appearances ?? "Appearance"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     cell.kontenTf.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
                     
                     return cell
                 } else if indexPath.section == 2 {
                     
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.posture ?? "Posture"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }
@@ -338,7 +338,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     cellTiga.kontenLbl3.text = CharLandingViewController.itemArray.last?.skin ?? "Skin"
                     
-                    cellTiga.kontenTf.placeholder = "Tulis disini"
+                    cellTiga.kontenTf.placeholder = "Write more info here"
                     cellTiga.kontenTf.text = CharLandingViewController.itemArray.last?.physicalDesc ?? ""
                     cellTiga.kontenTf.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
                     
@@ -346,17 +346,17 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 } else if indexPath.section == 1 {
                     
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.appearances ?? "Appearance"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 } else if indexPath.section == 2 {
                     
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.posture ?? "Posture"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }
@@ -371,43 +371,45 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if indexPath.section == 0 {
                     
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.temprament ?? "Temprament"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
                 }else if indexPath.section == 1 {
-                    cellDua.kontenTf.placeholder =  ""
+                    cellDua.kontenTf.text = CharLandingViewController.selectedChars?.strengh
+                    cellDua.kontenTf.placeholder =  "Write more info here"
                 
                     return cellDua
                     
                 }else if indexPath.section == 2 {
-                    cellDua.kontenTf.placeholder =  ""
+                    cellDua.kontenTf.text = CharLandingViewController.selectedChars?.weakness
+                    cellDua.kontenTf.placeholder =  "Write more info here"
                     
                     return cellDua
                     
                 }else if indexPath.section == 3 {
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.community ?? "Community"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else if indexPath.section == 4 {
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.intelligence ?? "Intelligence"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else if indexPath.section == 5 {
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.personality ?? "Personality"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
                 }else if indexPath.section == 6 {
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.perspective ?? "Perspective"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }
@@ -419,43 +421,45 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if indexPath.section == 0 {
                     
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.temprament ?? "Temprament"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
                 }else if indexPath.section == 1 {
-                    cellDua.kontenTf.placeholder =  "Tulis disini"
+                    cellDua.kontenTf.text = CharLandingViewController.itemArray.last?.strengh
+                    cellDua.kontenTf.placeholder =  "Write more info here"
                 
                     return cellDua
                     
                 }else if indexPath.section == 2 {
-                    cellDua.kontenTf.placeholder =  "Tulis disini"
+                    cellDua.kontenTf.text = CharLandingViewController.itemArray.last?.weakness
+                    cellDua.kontenTf.placeholder =  "Write more info here"
                     
                     return cellDua
                     
                 }else if indexPath.section == 3 {
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.community ?? "Community"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else if indexPath.section == 4 {
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.intelligence ?? "Intelligence"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else if indexPath.section == 5 {
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.personality ?? "Personality"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
                 }else if indexPath.section == 6 {
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.perspective ?? "Problem Solving"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }
@@ -472,7 +476,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if indexPath.section == 0 {
                     
                     cell.kontenLbl.text = CharLandingViewController.selectedChars?.economiClass ?? "Economic Class"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
@@ -500,7 +504,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     return cellDua
                     
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }
@@ -510,7 +514,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if indexPath.section == 0 {
                     
                     cell.kontenLbl.text = CharLandingViewController.itemArray.last?.economiClass ?? "Economic CLass"
-                    cell.kontenTf.placeholder = "Tulis disini"
+                    cell.kontenTf.placeholder = "Write more info here"
                     
                     return cell
                     
@@ -538,7 +542,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     return cellDua
                     
                 }else {
-                    cellDua.kontenTf.placeholder = "Tulis disini"
+                    cellDua.kontenTf.placeholder = "Write more info here"
                     
                     return cellDua
                 }

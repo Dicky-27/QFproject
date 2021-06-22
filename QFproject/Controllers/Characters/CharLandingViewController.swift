@@ -574,6 +574,18 @@ class CharLandingViewController: UIViewController {
             }else {
                 progress += 0.0625
             }
+            
+            if CharLandingViewController.selectedChars?.strengh == nil || CharLandingViewController.selectedChars?.strengh == "" {
+                progress += 0.0
+            }else {
+                progress += 0.0625
+            }
+            
+            if CharLandingViewController.selectedChars?.weakness == nil || CharLandingViewController.selectedChars?.weakness == "" {
+                progress += 0.0
+            }else {
+                progress += 0.0625
+            }
                 
                 
             horizontalBar.progress = progress
@@ -719,6 +731,18 @@ class CharLandingViewController: UIViewController {
                }else{
                    progress += 0.0625
                }
+            
+                if CharLandingViewController.itemArray.last?.strengh == nil || CharLandingViewController.itemArray.last?.strengh == "" {
+                    progress += 0.0
+                }else {
+                    progress += 0.0625
+                }
+                
+                if CharLandingViewController.itemArray.last?.weakness == nil || CharLandingViewController.itemArray.last?.weakness == "" {
+                    progress += 0.0
+                }else {
+                    progress += 0.0625
+                }
 
 
            horizontalBar.progress = progress

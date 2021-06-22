@@ -373,6 +373,18 @@ class WritersRoomViewController: UIViewController {
             }else {
                 progress += 0.0625
             }
+            
+            if CharLandingViewController.selectedChars?.strengh == nil || CharLandingViewController.selectedChars?.strengh == "" {
+                progress += 0.0
+            }else {
+                progress += 0.0625
+            }
+            
+            if CharLandingViewController.selectedChars?.weakness == nil || CharLandingViewController.selectedChars?.weakness == "" {
+                progress += 0.0
+            }else {
+                progress += 0.0625
+            }
                 
                 
             horizontalBar.progress = progress
@@ -532,6 +544,18 @@ class WritersRoomViewController: UIViewController {
                }else{
                    progress += 0.0625
                }
+            
+                if CharLandingViewController.itemArray.last?.strengh == nil || CharLandingViewController.itemArray.last?.strengh == "" {
+                    progress += 0.0
+                }else {
+                    progress += 0.0625
+                }
+                
+                if CharLandingViewController.itemArray.last?.weakness == nil || CharLandingViewController.itemArray.last?.weakness == "" {
+                    progress += 0.0
+                }else {
+                    progress += 0.0625
+                }
 
 
            horizontalBar.progress = progress
@@ -690,7 +714,7 @@ class WritersRoomViewController: UIViewController {
                     polaroidButton.setImage(#imageLiteral(resourceName: "polNo"), for: .disabled)
                     polaroidButton.isEnabled = false
                     
-                    rubickButton.setImage(#imageLiteral(resourceName: "rubNo"), for: .disabled)
+                    rubickButton.setImage(#imageLiteral(resourceName: "tubNo"), for: .disabled)
                     rubickButton.isEnabled = false
                     
                     glassButton.setImage(#imageLiteral(resourceName: "glassNo"), for: .disabled)
@@ -785,7 +809,7 @@ class WritersRoomViewController: UIViewController {
                 polaroidButton.setImage(#imageLiteral(resourceName: "polNo"), for: .disabled)
                 polaroidButton.isEnabled = false
                 
-                rubickButton.setImage(#imageLiteral(resourceName: "rubNo"), for: .disabled)
+                rubickButton.setImage(#imageLiteral(resourceName: "tubNo"), for: .disabled)
                 rubickButton.isEnabled = false
                 
                 glassButton.setImage(#imageLiteral(resourceName: "glassNo"), for: .disabled)
